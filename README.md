@@ -2,7 +2,7 @@
 
 The principal objective of this test is to evaluate the applicant's ability to learn new skills on the fly, build machine learning models in adherence to best practices, and ultimately deploy the developed solution to address practical scenarios.
 
-This test is about building a Gaussian Process Regression from scratch. The applicant is expected to wrap what they built as a REST api and package (using docker) to be deployed anywhere.
+This test is about building a Gaussian Process Regression from scratch. The applicant is expected to wrap what they built as a REST api and package the application to be deployed anywhere.
 
 The applicant is also expected to write a modular code following good coding practices.
 
