@@ -106,6 +106,7 @@ class GaussianKernel:
 
 Candidates should leverage the following resources for guidance:
 
+- [Good practices](https://goodresearch.dev/)
 - [FastAPI Documentation](https://fastapi.tiangolo.com/)
 - [Intro to Docker](https://docker-curriculum.com/)
 - [What are gaussian processes : interactive guide](https://distill.pub/2019/visual-exploration-gaussian-processes/)
