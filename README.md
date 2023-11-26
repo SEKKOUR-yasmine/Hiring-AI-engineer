@@ -1,8 +1,6 @@
 # Full-time AI engineer test
-test
-The principal objective of this test is to evaluate the applicant's ability to learn new skills on the fly, build machine learning models in adherence to best practices, and ultimately deploy the developed solution to address practical scenarios.
 
-This test is about building a Gaussian Process Regression from scratch. The applicant is expected to wrap what they built as a REST api and package the application to be deployed anywhere.
+The principal objective of this project is to evaluate the applicant's ability to learn new skills on the fly, build machine learning models in adherence to best practices and colaborate with others.
 
 The applicant is also expected to write a modular code following good coding practices.
 
@@ -15,9 +13,25 @@ The applicant is also expected to write a modular code following good coding pra
 - **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
 - **Dockerization**: Containerize your application with Docker, ensuring all dependencies are included for seamless setup and deployment.
 - **Documentation**: Document your solution thoroughly with docstrings, inline comments, and a `readme.md` file detailing setup and usage.
-- **Version Control**: Push your code to a new GitLab branch and open a merge request to the `main` branch.
 
-## Important practices
+## Setup
+
+Clone the repository
+```bash
+git clone git@github.com:BIGmama-technology/Hiring-AI-engineer.git
+```
+
+Run `setup.sh`, this will create a virtual environment and install some dependencies
+```bash
+./scripts/setup.sh
+```
+
+Activate the virtual environment
+```bash
+source .venv/bin/activate
+```
+
+## Contribution guidelines
 
 - design the structure of your repo in a modular way, example :
 
@@ -46,18 +60,14 @@ The applicant is also expected to write a modular code following good coding pra
 └── setup.cfg
 ```
 
-- use a virtual environment
+- always use the virtual environment
 
 ```bash
-# create a virtual environment
-python -m venv .venv
-# activate the virtual environment
+# activate the virtual environment created by setup.sh
 source .venv/bin/activate
 ```
-
 - Make sure you include any requirements and dependencies in your `pyproject.toml` or `requirements.txt`.
-- Type and format your code properly, you can use tools like `black`, `pre-commit`...
-
+- Type your code, document it and format it.
 ```python
 # untyped, undocumented and unformatted code
 import numpy as np
@@ -99,8 +109,8 @@ class GaussianKernel:
 
 ```
 
-- Git commit often and write meaningful commit messages.
-- Applicant must respect the communicated deadline.
+- Commit often and write meaningful commit messages.
+- Create a new branch with your name, push your code to it and create a pull request once you finish your contribution.
 
 ## Resources
 
