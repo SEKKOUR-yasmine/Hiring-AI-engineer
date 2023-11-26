@@ -1,0 +1,13 @@
+# cache
+__pycache__/
+*.egg-info
+
+# env
+.env
+.venv
+
+# vscode
+.vscode
+
+# outputs
+output/
