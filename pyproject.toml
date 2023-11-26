@@ -1,0 +1,8 @@
+[project]
+name = "AI-hiring-test"
+version = "0.0.1"
+dependencies = ["pre-commit", "black"]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
