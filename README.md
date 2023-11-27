@@ -1,8 +1,19 @@
-# Full-time AI engineer test
+# AI engineer test
 
 The principal objective of this project is to evaluate the applicant's ability to learn new skills on the fly, build machine learning models in adherence to best practices and colaborate with others.
 
 The applicant is also expected to write a modular code following good coding practices.
+
+## How does this work ?
+
+Below is a list of tasks that candidates concurently work on. If you deem your contribution to be complete, you can create a pull request.
+The team will review your contribution and provide feedback. If its good your branch will be merged with the `main` branch.
+Tasks that are done will be ommited and new tasks will apear for others.
+Candidates with merged changes will be invited to pass an interview with the team.
+
+## Who can apply ?
+
+Both students looking for an internship at BIGmama and professionals looking for a full-time position can apply.
 
 ## Tasks
 
@@ -122,5 +133,16 @@ Candidates should leverage the following resources for guidance:
 - [What are gaussian processes : interactive guide](https://distill.pub/2019/visual-exploration-gaussian-processes/)
 - [Kernel cookbook](https://www.cs.toronto.edu/~duvenaud/cookbook/)
 - [Packaging with pip](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+
+## FAQ
+
+#### how many features should I work on ?
+doesn't matter, what important is the value of your contribution and it's quality, impress us !
+
+#### what if the task I am working on gets completed by someone else ?
+pick another task, and hurry up !
+
+#### what if I have a question ?
+open an issue and we will answer it as soon as possible !
 
 btawfiq inchalah
