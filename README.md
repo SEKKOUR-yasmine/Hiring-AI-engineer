@@ -1,4 +1,4 @@
-i# AI engineer test
+# AI engineer test
 
 The principal objective of this project is to evaluate the applicant's ability to learn new skills on the fly, build machine learning models in adherence to best practices and colaborate with others.
 
