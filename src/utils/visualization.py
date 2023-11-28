@@ -5,8 +5,8 @@ import numpy as np
 import pandas as pd
 
 
-output_directory_co2 = 'src/output/co2_concentration'
-output_directory_air_passenger = 'src/output/air_passenger'
+output_directory_co2 = 'src/utils/co2_concentration'
+output_directory_air_passenger = 'src/utils/air_passenger'
 
 def visualize_Gaussian_Porcess_with_sum_kernal(X, y, X_pred,y_pred_mean_sum, y_pred_cov_sum ):
     plt.figure(figsize=(10, 6))
