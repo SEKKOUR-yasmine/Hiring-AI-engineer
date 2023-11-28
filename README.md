@@ -17,13 +17,18 @@ Both students looking for an internship at BIGmama and professionals looking for
 
 ## Tasks
 
-- **GaussianProcess.py**: Write a `GaussianProcess` class that embodies the Gaussian process regression model's functionality.
-- **kernels.py**: Implement a selection of three kernel functions.
-- **Kernel Operations**: Enable your kernels to perform addition (`+`) and multiplication (`*`) operations.
-- **Fit the guassian process**: Fit your Gaussian process to the datasets provided and plot the results.
-- **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
-- **Dockerization**: Containerize your application with Docker, ensuring all dependencies are included for seamless setup and deployment.
-- **Documentation**: Document your solution thoroughly with docstrings, inline comments, and a `readme.md` file detailing setup and usage.
+- [x] **GaussianProcess.py**: Write a `GaussianProcess` class that embodies the Gaussian process regression model's functionality.
+- [x] **kernels.py**: Implement a selection of three kernel functions.
+- [x] **Kernel Operations**: Enable your kernels to perform addition (`+`) and multiplication (`*`) operations.
+- [x] **Fit the guassian process**: Fit your Gaussian process to the datasets provided and plot the results.
+- [ ] **Optimize gaussian process fit fucntion**: for loops are slow, try to optimize the fit function to be faster.
+- [ ] **Add 2 periodic kernels**: Add 2 periodic kernels to `kernels.py`.
+- [ ] **Generalize**: so we can run gaussian process on any dataset, not just the ones provided.
+- [ ] **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
+- [ ] **Build a user interface**: Build a user interface to interact with the gaussian process model.
+- [ ] **Dockerization**: Containerize your application with Docker, ensuring all dependencies are included for seamless setup and deployment.
+- [ ] **Refactor**: Refactor code following good practices and a design pattern of your choice.
+- [ ] **Documentation**: Document the prject thoroughly with docstrings, inline comments and using a documentation generator of your choice.
 
 ## Setup
 
