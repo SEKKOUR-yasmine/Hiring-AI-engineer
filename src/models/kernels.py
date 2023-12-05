@@ -32,7 +32,7 @@ class GaussianKernel(Kernel):
         self.length_scale = length_scale
 
     def compute(self, x1, x2):
-        return np.exp(-0.5 * np.sum((x1 - x2) ** 2) / self.length_scale**2)
+        return np.exp(-0.5 * np.sum((x1 - x2) ** 2, axis=-1) / self.length_scale**2)
 
 
 class RBFKernel(Kernel):
@@ -40,7 +40,9 @@ class RBFKernel(Kernel):
         self.length_scale = length_scale
 
     def compute(self, x1, x2):
-        return np.exp(-0.5 * np.sum((x1 - x2) ** 2) / (2 * self.length_scale**2))
+        return np.exp(
+            -0.5 * np.sum((x1 - x2) ** 2, axis=-1) / (2 * self.length_scale**2)
+        )
 
 
 class RationalQuadraticKernel(Kernel):
@@ -49,5 +51,5 @@ class RationalQuadraticKernel(Kernel):
         self.length_scale = length_scale
 
     def compute(self, x1, x2):
-        dist = np.sum((x1 - x2) ** 2)
+        dist = np.sum((x1 - x2) ** 2, axis=-1)
         return (1 + dist / (2 * self.alpha * self.length_scale**2)) ** (-self.alpha)

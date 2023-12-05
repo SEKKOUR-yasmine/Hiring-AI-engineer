@@ -1,31 +1,50 @@
 import numpy as np
+from typing import Union, Tuple
+
 
 class GaussianProcess:
-    def __init__(self, kernel, noise=1e-5):
+    def __init__(self, kernel, noise: float = 1e-5) -> None:
+        """
+        Initialize a Gaussian Process with a specified kernel and noise level.
+
+        Parameters:
+        kernel: An instance of a kernel class.
+        noise (float): The noise level in the Gaussian Process.
+        """
         self.kernel = kernel
         self.noise = noise
         self.X_train = None
         self.y_train = None
 
-    def fit(self, X, y):
+    def fit(self, X: np.ndarray, y: np.ndarray) -> None:
+        """
+        Fit the Gaussian Process model to training data.
+
+        Parameters:
+        X (np.ndarray): The input training data.
+        y (np.ndarray): The target training data.
+        """
         self.X_train = X
         self.y_train = y
 
-    def predict(self, X):
-        K_ss = np.zeros((X.shape[0], X.shape[0]))
-        for i in range(X.shape[0]):
-            for j in range(X.shape[0]):
-                K_ss[i, j] = self.kernel.compute(X[i], X[j])
+    def predict(self, X: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
+        """
+        Predict the mean and covariance of the Gaussian Process at specified input points.
 
-        K_s = np.zeros((X.shape[0], self.X_train.shape[0]))
-        for i in range(X.shape[0]):
-            for j in range(self.X_train.shape[0]):
-                K_s[i, j] = self.kernel.compute(X[i], self.X_train[j])
+        Parameters:
+        X (np.ndarray): The input points for which predictions are made.
 
-        K = np.zeros((self.X_train.shape[0], self.X_train.shape[0]))
-        for i in range(self.X_train.shape[0]):
-            for j in range(self.X_train.shape[0]):
-                K[i, j] = self.kernel.compute(self.X_train[i], self.X_train[j])
+        Returns:
+        Tuple[np.ndarray, np.ndarray]: A tuple containing the mean and covariance of the predictions.
+        """
+        # Covariance between new input points
+        K_ss = self.kernel.compute(X[:, np.newaxis], X)
+
+        # Covariance between new input points and training data
+        K_s = self.kernel.compute(X[:, np.newaxis], self.X_train)
+
+        # Covariance between training data points
+        K = self.kernel.compute(self.X_train[:, np.newaxis], self.X_train)
 
         K_inv = np.linalg.inv(K + self.noise * np.identity(K.shape[0]))
 
