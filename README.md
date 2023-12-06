@@ -21,14 +21,21 @@ Both students looking for an internship at BIGmama and professionals looking for
 - [x] **kernels.py**: Implement a selection of three kernel functions.
 - [x] **Kernel Operations**: Enable your kernels to perform addition (`+`) and multiplication (`*`) operations.
 - [x] **Fit the guassian process**: Fit your Gaussian process to the datasets provided and plot the results.
-- [ ] **Optimize gaussian process fit fucntion**: for loops are slow, try to optimize the fit function to be faster.
-- [ ] **Add 2 periodic kernels**: Add 2 periodic kernels to `kernels.py`.
+- [x] **Optimize gaussian process fit fucntion**: for loops are slow, try to optimize the fit function to be faster.
+- [x] **Add 2 periodic kernels**: Add 2 periodic kernels to `kernels.py`.
+
+- [ ] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
+- [ ] **fit BNN** : fit bnn to provided data and generate plots.
+ 
+- [ ] **Github actions** : improve developer experience with github actions (start with tests).
+- [ ] **write tests** : use pytest to test GP and kernels modules.
+
 - [ ] **Generalize**: so we can run gaussian process on any dataset, not just the ones provided.
 - [ ] **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
 - [ ] **Build a user interface**: Build a user interface to interact with the gaussian process model.
 - [ ] **Dockerization**: Containerize your application with Docker, ensuring all dependencies are included for seamless setup and deployment.
 - [ ] **Refactor**: Refactor code following good practices and a design pattern of your choice.
-- [ ] **Documentation**: Document the prject thoroughly with docstrings, inline comments and using a documentation generator of your choice.
+- [ ] **Documentation**: Document the project thoroughly with docstrings, inline comments and using a documentation generator of your choice.
 
 ## Setup
 
