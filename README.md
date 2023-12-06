@@ -25,7 +25,7 @@ Both students looking for an internship at BIGmama and professionals looking for
 - [x] **Add 2 periodic kernels**: Add 2 periodic kernels to `kernels.py`.
 
 - [ ] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
-- [ ] **fit BNN** : fit bnn to provided data and generate plots.
+- [ ] **fit BNN** : fit the bnn to the provided data and generate plots.
  
 - [ ] **Github actions** : improve developer experience with github actions (start with tests).
 - [ ] **write tests** : use pytest to test GP and kernels modules.
