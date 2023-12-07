@@ -2,23 +2,22 @@ import torch
 import torch.nn as nn
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-import sys
 
-from models.BnnModel import BayesianModel
-from data.data_loader import (
+from src.models.BnnModel import BayesianModel
+from src.data.data_loader import (
     load_mauna_loa_atmospheric_co2,
     load_international_airline_passengers,
 )
 
+MUANA_DATA_PATH = "data/mauna_loa_atmospheric_co2.csv"
+AIRLINE_DATA_PATH = "data/international-airline-passengers.csv"
 
 # ------------------------------------------
 # mauna_loa_atmospheric_co2 Dataset
 # ------------------------------------------
 
 # Prepare data
-X1, y1, X1_normalized = load_mauna_loa_atmospheric_co2(
-    "../../data/mauna_loa_atmospheric_co2.csv"
-)
+X1, y1, X1_normalized = load_mauna_loa_atmospheric_co2(MUANA_DATA_PATH)
 
 # Split the data into training and test sets
 X1_train, X1_test, y1_train, y1_test = train_test_split(
@@ -90,9 +89,7 @@ plt.show()
 # ------------------------------------------
 
 # Prepare data
-X2, y2, X2_normalized = load_international_airline_passengers(
-    "../../data/international-airline-passengers.csv"
-)
+X2, y2, X2_normalized = load_international_airline_passengers(AIRLINE_DATA_PATH)
 
 # Split the data into training and test sets
 X2_train, X2_test, y2_train, y2_test = train_test_split(
