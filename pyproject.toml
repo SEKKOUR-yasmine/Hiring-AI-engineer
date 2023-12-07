@@ -1,5 +1,5 @@
 [project]
-name = "AI-hiring-test"
+name = "src"
 version = "0.0.1"
 dependencies = ["pre-commit", "black"]
 
