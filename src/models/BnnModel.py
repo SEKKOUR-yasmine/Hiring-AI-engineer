@@ -3,11 +3,6 @@ import torch.nn as nn
 from torch.distributions import Normal
 from torch.nn import functional as F
 
-import torch
-import torch.nn as nn
-from torch.distributions import Normal
-from torch.nn import functional as F
-
 
 class BnnLayer(nn.Module):
     """
