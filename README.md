@@ -23,15 +23,20 @@ Both students looking for an internship at BIGmama and professionals looking for
 - [x] **Fit the guassian process**: Fit your Gaussian process to the datasets provided and plot the results.
 - [x] **Optimize gaussian process fit fucntion**: for loops are slow, try to optimize the fit function to be faster.
 - [x] **Add 2 periodic kernels**: Add 2 periodic kernels to `kernels.py`.
-
-- [ ] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
-- [ ] **fit BNN** : fit the bnn to the provided data and generate plots.
- 
+-----
+- [x] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
+- [x] **fit BNN** : fit bnn to provided data and generate plots.
+- [ ] **improve BNN results**
+- [ ] <span style="color: green">**Varitional Inference** : implement variational inference for BNNs.</span> (extra love if you do this.)
+- [ ] **plot epistmic uncertainty** : BNNs like GPs allow us to quantify uncertainty.
+-----
 - [ ] **Github actions** : improve developer experience with github actions (start with tests).
 - [ ] **write tests** : use pytest to test GP and kernels modules.
-
+-----
+- [ ] **Inference with GPS** : plot how the GP fit the porvided data using different kernels, plot uncertainty too.
 - [ ] **Generalize**: so we can run gaussian process on any dataset, not just the ones provided.
 - [ ] **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
+-----
 - [ ] **Build a user interface**: Build a user interface to interact with the gaussian process model.
 - [ ] **Dockerization**: Containerize your application with Docker, ensuring all dependencies are included for seamless setup and deployment.
 - [ ] **Refactor**: Refactor code following good practices and a design pattern of your choice.
@@ -52,6 +57,11 @@ Run `setup.sh`, this will create a virtual environment and install some dependen
 Activate the virtual environment
 ```bash
 source .venv/bin/activate
+```
+
+To train BNN run :
+```bash
+python src/main.py
 ```
 
 ## Contribution guidelines
@@ -145,6 +155,7 @@ Candidates should leverage the following resources for guidance:
 - [What are gaussian processes : interactive guide](https://distill.pub/2019/visual-exploration-gaussian-processes/)
 - [Kernel cookbook](https://www.cs.toronto.edu/~duvenaud/cookbook/)
 - [Packaging with pip](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- [Varitational inference](https://krasserm.github.io/2019/03/14/bayesian-neural-networks/)
 
 ## FAQ
 

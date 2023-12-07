@@ -1,5 +1,5 @@
 import numpy as np
-from typing import Union, Tuple
+from typing import Tuple
 
 
 class GaussianProcess:
