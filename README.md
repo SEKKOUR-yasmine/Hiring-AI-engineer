@@ -26,7 +26,8 @@ Both students looking for an internship at BIGmama and professionals looking for
 -----
 - [x] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
 - [x] **fit BNN** : fit bnn to provided data and generate plots.
-- [ ] **improve BNN results**
+- [ ] **improve BNN results** : improve the architecture.
+- [ ] **improve training loop** : refactor + use `tqdm` 
 - [ ] <span style="color: green">**Varitional Inference** : implement variational inference for BNNs.</span> (extra love if you do this.)
 - [ ] **plot epistmic uncertainty** : BNNs like GPs allow us to quantify uncertainty.
 -----
