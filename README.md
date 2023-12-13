@@ -23,21 +23,29 @@ Both students looking for an internship at BIGmama and professionals looking for
 - [x] **Fit the guassian process**: Fit your Gaussian process to the datasets provided and plot the results.
 - [x] **Optimize gaussian process fit fucntion**: for loops are slow, try to optimize the fit function to be faster.
 - [x] **Add 2 periodic kernels**: Add 2 periodic kernels to `kernels.py`.
------
+
+---
+
 - [x] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
 - [x] **fit BNN** : fit bnn to provided data and generate plots.
 - [ ] **improve BNN results** : improve the architecture.
-- [ ] **improve training loop** : refactor + use `tqdm` 
+- [x] **improve training loop** : refactor + use `tqdm`
 - [ ] <span style="color: green">**Varitional Inference** : implement variational inference for BNNs.</span> (extra love if you do this.)
 - [ ] **plot epistmic uncertainty** : BNNs like GPs allow us to quantify uncertainty.
------
+
+---
+
 - [ ] **Github actions** : improve developer experience with github actions (start with tests).
 - [ ] **write tests** : use pytest to test GP and kernels modules.
------
+
+---
+
 - [ ] **Inference with GPS** : plot how the GP fit the porvided data using different kernels, plot uncertainty too.
 - [ ] **Generalize**: so we can run gaussian process on any dataset, not just the ones provided.
 - [ ] **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
------
+
+---
+
 - [ ] **Build a user interface**: Build a user interface to interact with the gaussian process model.
 - [ ] **Dockerization**: Containerize your application with Docker, ensuring all dependencies are included for seamless setup and deployment.
 - [ ] **Refactor**: Refactor code following good practices and a design pattern of your choice.
@@ -46,21 +54,25 @@ Both students looking for an internship at BIGmama and professionals looking for
 ## Setup
 
 Clone the repository
+
 ```bash
 git clone git@github.com:BIGmama-technology/Hiring-AI-engineer.git
 ```
 
 Run `setup.sh`, this will create a virtual environment and install some dependencies
+
 ```bash
 ./scripts/setup.sh
 ```
 
 Activate the virtual environment
+
 ```bash
 source .venv/bin/activate
 ```
 
 To train BNN run :
+
 ```bash
 python src/main.py
 ```
@@ -100,8 +112,10 @@ python src/main.py
 # activate the virtual environment created by setup.sh
 source .venv/bin/activate
 ```
+
 - Make sure you include any requirements and dependencies in your `pyproject.toml` or `requirements.txt`.
 - Type your code, document it and format it.
+
 ```python
 # untyped, undocumented and unformatted code
 import numpy as np
@@ -161,12 +175,15 @@ Candidates should leverage the following resources for guidance:
 ## FAQ
 
 #### how many features should I work on ?
+
 doesn't matter, what important is the value of your contribution and it's quality, impress us !
 
 #### what if the task I am working on gets completed by someone else ?
+
 pick another task, and hurry up !
 
 #### what if I have a question ?
+
 open an issue and we will answer it as soon as possible !
 
 btawfiq inchalah
