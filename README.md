@@ -77,6 +77,12 @@ To train BNN run :
 python src/main.py
 ```
 
+To run the server run :
+
+```bash
+uvicorn src.api.app:app --reload
+```
+
 ## Contribution guidelines
 
 - design the structure of your repo in a modular way, example :
