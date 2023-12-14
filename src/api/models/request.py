@@ -6,7 +6,7 @@ from src.data.data_loader import (
     prepare_international_airline_passenger_data,
 )
 
-import config
+import data.config as config
 
 
 class BaseRequestModel(BaseModel):
@@ -15,7 +15,6 @@ class BaseRequestModel(BaseModel):
         Returns a Tensor object that is trainable by the model and shaped
         like the expected input of each model
         """
-
         pass
 
     def to_df():
