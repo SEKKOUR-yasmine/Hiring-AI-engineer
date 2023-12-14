@@ -6,8 +6,10 @@ def load_mauna_loa_atmospheric_co2(file_path):
     df = pd.read_csv(file_path)
 
     # Prepare the data
+
     X = prepare_mauna_loa_data(df)
-    y = df["average"].values
+    y = df[["average"]].values
+
 
     # Normalize the data for numerical stability
     X_normalized = (X - X.mean()) / X.std()
@@ -20,7 +22,8 @@ def load_international_airline_passengers(file_path):
 
     # Prepare the data
     X_airpassengers = prepare_international_airline_passenger_data(df_airpassengers)
-    y_airpassengers = df_airpassengers["Passengers"].values
+    y_airpassengers = df_airpassengers[["Passengers"]].values
+
 
     # Normalize the data for numerical stability
     X_airpassengers_normalized = (
