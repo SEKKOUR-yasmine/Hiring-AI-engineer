@@ -29,7 +29,7 @@ Both students looking for an internship at BIGmama and professionals looking for
 - [x] **simple BNN** : implement a bayesian neural network using `pytorch` or `pymc3`.
 - [x] **fit BNN** : fit bnn to provided data and generate plots.
 - [ ] **improve BNN results** : improve the architecture.
-- [x] **improve training loop** : refactor + use `tqdm`
+- [ ] **improve training loop** : refactor + use `tqdm`
 - [ ] <span style="color: green">**Varitional Inference** : implement variational inference for BNNs.</span> (extra love if you do this.)
 - [ ] **plot epistmic uncertainty** : BNNs like GPs allow us to quantify uncertainty.
 
@@ -40,7 +40,7 @@ Both students looking for an internship at BIGmama and professionals looking for
 
 ---
 
-- [ ] **Inference with GPS** : plot how the GP fit the porvided data using different kernels, plot uncertainty too.
+- [ ] **Inference with GPs** : plot how the GP fit the porvided data using different kernels, plot uncertainty too.
 - [ ] **Generalize**: so we can run gaussian process on any dataset, not just the ones provided.
 - [ ] **REST API via FastAPI**: Design a REST API using FastAPI to make your Gaussian process regression accessible over HTTP.
 
