@@ -1,10 +1,8 @@
-import torch
-from fastapi import FastAPI, File, UploadFile, HTTPException, Depends
+from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from src.api.models.response import (
     PredictionResponse,
 )  # Import the custom response class
-from src.api.utils.predictor import predict
 from src.api.utils.model_loader import (
     load_mauna_loa_model,
     load_international_airport_passengers_model,
