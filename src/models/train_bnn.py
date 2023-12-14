@@ -74,6 +74,9 @@ with torch.no_grad():
 # Convert predictions to NumPy array for plotting
 predictions_np_1 = predictions_1.numpy()
 
+# export model
+torch.save(model, "./models/mauna_loa_model.pth")
+
 plt.figure(figsize=(10, 6))
 plt.plot(X1_test, y1_test, "b.", markersize=10, label="Ground Truth")
 plt.plot(X1_test, predictions_1, "r.", markersize=10, label="Predictions")
@@ -144,8 +147,12 @@ with torch.no_grad():
     model.eval()
     predictions_2 = model(X2_test_tensor)
 
+
 # Convert predictions to NumPy array for plotting
 predictions_np_2 = predictions_2.numpy()
+
+# export model
+torch.save(model, "./models/international_airline_passengers_model.pth")
 
 plt.figure(figsize=(10, 6))
 plt.plot(X2_test, y2_test, "b.", markersize=10, label="Ground Truth")
