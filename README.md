@@ -35,6 +35,11 @@ Both students looking for an internship at BIGmama and professionals looking for
 
 ---
 
+- [ ] **simple MLP** : impelement a simple MLP with batch normalization and dropout for modeling uncertainty [paper 1](https://arxiv.org/abs/1802.06455) [paper 2](https://arxiv.org/abs/1506.02142)
+- [ ] **visualize uncertainty** : visualize the modeled uncertainty using the provided datasets
+
+---
+
 - [ ] **Github actions** : improve developer experience with github actions (start with tests).
 - [ ] **write tests** : use pytest to test GP and kernels modules.
 
