@@ -194,6 +194,9 @@ doesn't matter, what important is the value of your contribution and it's qualit
 
 pick another task, and hurry up !
 
+#### I dont arrive to push my code !
+here is an issue with details on how to push [#21](https://github.com/BIGmama-technology/Hiring-AI-engineer/issues/21)
+
 #### what if I have a question ?
 
 open an issue and we will answer it as soon as possible !
